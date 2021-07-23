@@ -6,8 +6,13 @@
 
     .login-container {
         width: 400px;
-        height: 100%;
-        margin: 0 auto;
+        height: 450px;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
         border-radius: 10px;
         background-color: white;
 
@@ -21,11 +26,22 @@
                 padding-top: 10px;
             }
 
-            .login-input{
+            .login-input {
                 margin: 7px 0;
+
+                .custom-input-password{
+                    position: relative;
+
+                    i {
+                        position: absolute;
+                        right: 5px;
+                        top: 10px;
+                        cursor: pointer;
+                    }
+                }
             }
 
-            .btn-login{
+            .btn-login {
                 width: 100%;
                 margin: 10px 0;
                 height: 30px;
@@ -36,17 +52,17 @@
                 color: white;
             }
 
-            .forgot-password{
+            .forgot-password {
                 font-size: 14px;
             }
 
-            .social-login{
+            .social-login {
                 display: flex;
                 text-align: center;
                 justify-content: center;
                 margin-top: 10px;
 
-                .google{
+                .google {
                     font-size: 30px;
                     background: #c32424;
                     border-radius: 50%;
@@ -59,7 +75,7 @@
                     margin-right: 10px;
                 }
 
-                .facebook{
+                .facebook {
                     font-size: 30px;
                     background: #307aff;
                     border-radius: 50%;
